@@ -2,7 +2,6 @@ import React from 'react';
 import EmojiData from './emojiList';
 import EmojiResults from './EmojiResults';
 import SearchInput from './SearchInput';
-// import filterEmoji from './FilterEmoji';
 
 class App extends React.Component {
 

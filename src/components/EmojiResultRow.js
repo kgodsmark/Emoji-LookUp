@@ -3,14 +3,17 @@ import PT from 'prop-types';
 
 
 class EmojiResultRow extends React.Component {
-    constructor (props) {
-    super(props);
-    }
+    // constructor (props) {
+    // super(props);
+    // }
 
     render () {
+
+        const image = `em em-${this.props.title.toLowerCase()}`
         return (
             <div>
-                <p>{this.props.symbol}   {this.props.title}</p>
+                <i className={image?image:this.props.symbol}></i>
+                <span>   {this.props.title.toLowerCase()}</span>
             </div>
         );
     }
